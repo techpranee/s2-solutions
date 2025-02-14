@@ -86,7 +86,7 @@
 	</nav>
 	<!-- END nav -->
 
-	<section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');">
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('images/services.jpg');">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -135,7 +135,7 @@
 				<div class="col-md-8 mb-5">
 					<div class="tab-content">
 						<div class="tab-pane container p-0 active" id="services-1">
-							<div class="img" style="background-image: url(images/project-2.jpg);"></div>
+							<div class="img" style="background-image: url(images/clinical.jpg);"></div>
 							<h3><a href="#">Clinical Management</a></h3>
 							<p>S2 Solution streamlines clinical operations with cutting-edge technology and efficient
 								workflows. From patient data management to compliance and reporting, we help healthcare
@@ -143,7 +143,7 @@
 								in clinical outcomes.</p>
 						</div>
 						<div class="tab-pane container p-0 fade" id="services-2">
-							<div class="img" style="background-image: url(images/project-3.jpg);"></div>
+							<div class="img" style="background-image: url(images/it.jpg);"></div>
 							<h3><a href="#">IT Consulting</a></h3>
 							<p>Leverage the expertise of S2 Solution to transform your IT landscape. We assess your
 								current infrastructure, align technology with business goals, and implement strategies
@@ -151,7 +151,7 @@
 								competitive market.</p>
 						</div>
 						<div class="tab-pane container p-0 fade" id="services-3">
-							<div class="img" style="background-image: url(images/project-4.jpg);"></div>
+							<div class="img" style="background-image: url(images/health.jpg);"></div>
 							<h3><a href="#">Healthcare Consulting</a></h3>
 							<p>Our healthcare consulting services are designed to help providers navigate industry
 								challenges, optimize processes, and adopt innovative technologies. From regulatory
@@ -159,13 +159,14 @@
 								superior care and operational efficiency.</p>
 						</div>
 						<div class="tab-pane container p-0 fade" id="services-4">
-							<div class="img" style="background-image: url(images/project-5.jpg);"></div>
+							<div class="img" style="background-image: url(images/embedded.jpg);"></div>
 							<h3><a href="#">Embedded Software Development</a></h3>
 							<p>Turn to an experienced embedded software design team that empowers organizations with
 								real-world knowledge of the latest technologies and modern platforms for embedded
 								software development.</p>
 
-							<p><a href="embedded-software.html" class="btn btn-primary px-4 py-1 mt-1">Learn More</a></p>
+							<p><a href="embedded-software.html" class="btn btn-primary px-4 py-1 mt-1">Learn More</a>
+							</p>
 						</div>
 					</div>
 				</div>
@@ -298,6 +299,40 @@
 			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
 				stroke="#F96D00" />
 		</svg></div>
+
+	<style>
+		.img {
+			width: 400px;
+			/* Set desired width */
+			height: 300px;
+			/* Set desired height */
+			border-radius: 15px;
+			/* Rounded corners */
+			background-image: url(images/it.jpg);
+			/* Set the background image */
+			background-size: cover;
+			/* Make the image cover the entire div */
+			background-position: center;
+			/* Center the image */
+			position: relative;
+			/* To position the dark overlay */
+			overflow: hidden;
+			/* Ensure rounded corners work with the overlay */
+		}
+
+		.img::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.2);
+			/* Dark tone overlay */
+			border-radius: 15px;
+			/* Match the border-radius of the main div */
+		}
+	</style>
 
 
 	<script src="js/jquery.min.js"></script>

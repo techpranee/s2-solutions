@@ -84,7 +84,7 @@
     </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_1.jpg');">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/about.jpg');">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
@@ -95,12 +95,13 @@
         </div>
       </div>
     </section>
+    
 
     <section class="ftco-section ftco-about ftco-no-pt ftco-no-pb ftco-counter" id="section-counter">
 			<div class="container consult-wrap">
 				<div class="row d-flex align-items-stretch">
 					<div class="col-md-6 wrap-about align-items-stretch d-flex">
-						<div class="img" style="background-image: url(images/about.jpg);"></div>
+						<div class="img" style="background-image: url(images/about_2.jpg);"></div>
 					</div>
 					<div class="col-md-6 wrap-about ftco-animate py-md-5 pl-md-5">
 						<div class="heading-section mb-4">
@@ -358,6 +359,47 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+  <style>
+		.img {
+			width: 400px;
+			/* Set desired width */
+			height: 850px;
+			/* Set desired height */
+			border-radius: 15px;
+			/* Rounded corners */
+			background-image: url(images/it.jpg);
+			/* Set the background image */
+			background-size: cover;
+			/* Make the image cover the entire div */
+			background-position: center;
+			/* Center the image */
+			position: relative;
+			/* To position the dark overlay */
+			overflow: hidden;
+			/* Ensure rounded corners work with the overlay */
+      margin-top: 50px;
+		}
+
+		.img::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.2);
+			/* Dark tone overlay */
+			border-radius: 15px;
+			/* Match the border-radius of the main div */
+		}
+
+    @media (max-width: 576px) {
+    .img {
+      height: 500px; /* Reduced height for small screens */
+      width: 100%; /* Optional: Adjust width for smaller screens */
+    }
+  }
+	</style>
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
